@@ -219,7 +219,7 @@ services:
       - JAEGER_AGENT_HOST=jaeger
     volumes:
       - 'gitserver-0:/data/repos'
-      - '/home/jared/projects/sourcegraph_test/ssh:/home/sourcegraph/.ssh'
+      - '~/.ssh:/home/sourcegraph/.ssh'
     networks:
       - sourcegraph
     restart: always
